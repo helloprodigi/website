@@ -40,6 +40,7 @@ export function getExecutiveGalleryYears(): string[] {
   return fs
     .readdirSync(galleryRootDir, { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
+    .filter((entry) => getExecutiveGalleryImages(entry.name).length > 0)
     .map((entry) => entry.name)
     .sort((a, b) => b.localeCompare(a));
 }
