@@ -41,6 +41,7 @@ function isGroupedColumns(columns: unknown[]): columns is NavGroupedColumn[] {
 }
 
 export default function Header() {
+  const [hasMounted, setHasMounted] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false);
@@ -49,6 +50,10 @@ export default function Header() {
   );
   const mobileSearchInputRef = useRef<HTMLInputElement>(null);
   const lastScrollYRef = useRef(0);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => {
@@ -149,7 +154,7 @@ export default function Header() {
     setOpenMobileMegaMenu((prev) => (prev === label ? null : label));
   };
 
-  const portalTarget = typeof window !== "undefined" ? document.body : null;
+  const portalTarget = hasMounted ? document.body : null;
 
   return (
     <header

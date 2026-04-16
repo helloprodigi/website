@@ -5,7 +5,6 @@ import Footer from "@/components/landing/sections/Footer";
 import Header from "@/components/landing/sections/Header";
 import Hero from "@/components/landing/sections/Hero";
 import PartnersSection from "@/components/landing/sections/Partners";
-import Research from "@/components/landing/sections/Research";
 import SuccessStats from "@/components/landing/sections/SuccessStats";
 import Updates from "@/components/landing/sections/Updates";
 
@@ -19,7 +18,6 @@ export default function LandingPage() {
         <About />
         <FindWay />
         <Courses />
-        <Research />
         <Updates />
         <PartnersSection />
       </main>
