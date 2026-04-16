@@ -41,19 +41,19 @@ export const HALL_OF_FAME_BY_YEAR: Record<HallOfFameYear, HallOfFameEntry[]> = {
       title: "Juara 3",
       competition:
         "Inovasi Teknologi Digital Pendidikan Lomba Inovasi Digital Mahasiswa 2024",
-      image: "/images/hof/12.png",
+      image: "/images/hof/13.png",
     },
     {
       id: 6,
       title: "Juara Harapan",
       competition: "Bidang Budidaya P2MW",
-      image: "/images/hof/13.png",
+      image: "/images/hof/14.png",
     },
     {
       id: 7,
       title: "Juara Harapan",
       competition: "Bidang SmartCity Gemastik 2024",
-      image: "/images/hof/14.png",
+      image: "/images/hof/15.png",
     },
   ],
 };
