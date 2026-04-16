@@ -38,14 +38,23 @@ export default function SuccessStats() {
         {renderStatCard(successStats[0], "md:col-span-2")}
         {renderStatCard(successStats[1], "md:col-span-4")}
 
-        <article className="card-rise relative min-h-[220px] sm:min-h-[300px] md:min-h-[125px] overflow-hidden rounded-sm md:col-span-6 md:row-span-2">
+        <article className="card-rise overflow-hidden rounded-sm md:relative md:col-span-6 md:row-span-2 md:min-h-31.25">
+          <Image
+            src="/images/adikara-play.png"
+            alt="Adikara 2025 competition"
+            width={1280}
+            height={720}
+            loading="lazy"
+            sizes="100vw"
+            className="block h-auto w-full md:hidden"
+          />
           <Image
             src="/images/adikara-play.png"
             alt="Adikara 2025 competition"
             fill
             loading="lazy"
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover"
+            className="hidden object-cover md:block"
           />
         </article>
 
