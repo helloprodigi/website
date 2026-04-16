@@ -144,12 +144,21 @@ export const admissionLinks = [
   "Result of Admission Test",
 ];
 
-export const wayCards = [
-  "Schools and Departments",
-  "Research",
-  "Admissions",
-  "Institutes",
-  "Scholarship",
+export const leadMessages = [
+  {
+    quote:
+      "Kami membangun Prodigi sebagai ruang tumbuh bersama. Setiap anggota didorong untuk berani mencoba, berkolaborasi, dan menuntaskan karya terbaiknya.",
+    name: "Muhammad Haulul Azkiyaa",
+    label: "Lead 2025",
+    photo: "/images/executives/members/2025/om haulul.png",
+  },
+  {
+    quote:
+      "Prodigi bukan hanya tentang menang lomba, tapi juga tentang membentuk karakter problem solver yang siap membawa dampak nyata bagi sekitar.",
+    name: "Sayyid Rayhan Mulachela",
+    label: "Lead 2024",
+    photo: "",
+  },
 ];
 
 export const courseFilters = ["Bachelor", "Master", "Diploma"];
