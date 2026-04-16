@@ -81,11 +81,11 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(255,255,255,0.35),transparent_38%)]" />
 
       <div
-        className="relative z-10 mx-auto flex w-full max-w-[1480px] items-center px-5 py-12 md:px-8 lg:px-10"
+        className="relative z-10 mx-auto flex w-full max-w-370 items-center px-5 py-12 md:px-8 lg:px-10"
         style={{ minHeight: heroHeight }}
       >
-        <div className="max-w-[620px]">
-          <h1 className="text-5xl leading-[1.5] tracking-tight text-[#191919] sm:text-6xl lg:text-[84px] font-bold">
+        <div className="max-w-155">
+          <h1 className="text-5xl leading-normal tracking-tight text-[#191919] sm:text-6xl lg:text-[84px] font-bold">
             PRODIGI
           </h1>
           <h2 className="mb-4 text-sm font-medium tracking-[0.01em] text-[#3a3a3a] sm:text-base">
@@ -94,7 +94,7 @@ export default function Hero() {
             Laboratory.
           </h2>
 
-          <div className="mt-10 gap-2 grid max-w-[580px] grid-cols-2 overflow-hidden shadow-[0_16px_36px_rgba(12,16,28,0.08)]">
+          <div className="mt-10 grid max-w-145 grid-cols-1 gap-2 overflow-hidden shadow-[0_16px_36px_rgba(12,16,28,0.08)] sm:grid-cols-2">
             {heroActions.map((action, index) => {
               const ActionIcon = iconMap[action.icon as keyof typeof iconMap];
 
@@ -107,7 +107,7 @@ export default function Hero() {
                     index === 0
                       ? "bg-[#ffc91f] text-black hover:bg-[#ffb901]"
                       : "bg-white text-[#171717] hover:bg-[#f6f6f6]"
-                  } ${index % 2 === 0 ? "border-r border-black/10" : ""} ${index < 2 ? "border-b border-black/10" : ""}`}
+                  } ${index < heroActions.length - 1 ? "border-b border-black/10" : ""} ${index % 2 === 0 ? "sm:border-r sm:border-black/10" : ""} ${index < 2 ? "sm:border-b sm:border-black/10" : "sm:border-b-0"}`}
                 >
                   <ActionIcon size="18" color="currentColor" variant="Linear" />
                   <span className="flex-1">{action.label}</span>
