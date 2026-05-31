@@ -8,7 +8,7 @@ import {
   hofPeriodCreateSchema,
 } from "@/trpc/schemas/hallOfFame-schema";
 import prisma from "@/lib/prisma";
-import { Prisma } from "../../../generated/prisma/client";
+import { Prisma } from "../../../generated/prisma/edge";
 import { TRPCError } from "@trpc/server";
 
 export const hallOfFameRouter = createTRPCRouter({

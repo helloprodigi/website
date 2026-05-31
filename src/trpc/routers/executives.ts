@@ -1,6 +1,6 @@
 import { adminProcedure, baseProcedure, createTRPCRouter } from "../init";
 import prisma from "@/lib/prisma";
-import type { Prisma } from "../../../generated/prisma/client";
+import type { Prisma } from "../../../generated/prisma/edge";
 import { TRPCError } from "@trpc/server";
 import {
   executiveMemberCreateSchema,

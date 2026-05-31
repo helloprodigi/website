@@ -9,7 +9,7 @@ import {
   activityUpdateSchema,
   activityDeleteSchema,
 } from "@/trpc/schemas/activities-schema";
-import type { Prisma } from "../../../generated/prisma/client";
+import type { Prisma } from "../../../generated/prisma/edge";
 import type { ActivityCategory, ActivityMeta } from "@/lib/activity-types";
 import { generateSlug } from "@/lib/utils/slug";
 import { remark } from "remark";
